@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Ad Blocker",
+  "version": "1.0",
+  "permissions": [
+    "declarativeNetRequest",
+    "activeTab",
+    "scripting"
+  ],
+  "icons": {
+    "128": "ad_blocker.png"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
